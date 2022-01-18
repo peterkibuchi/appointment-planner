@@ -1,12 +1,11 @@
 #root {
   padding: 30px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 nav > a {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
   color: #000000;
   margin-right: 30.5px;
   text-decoration-line: none;
@@ -30,9 +29,6 @@ h2 {
   margin-bottom: 18px;
 }
 
-section {
-}
-
 hr {
   border: none;
   border-top: 1px solid #979797;
@@ -40,23 +36,21 @@ hr {
 }
 
 input[type="submit"] {
-  background: #03a8d8;
+  background: #0366ee;
   border-radius: 4px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   border: none;
   outline: none;
   padding: 10px 0;
   width: 100%;
-  font-family: "Open Sans", sans-serif;
   margin-top: 10px;
   margin-bottom: 0px;
 }
 
 input,
 select {
-  font-family: "Open Sans", sans-serif;
   background: #ffffff;
   border: 1px solid #979797;
   border-radius: 4px;
@@ -65,18 +59,4 @@ select {
   width: 100%;
   margin-bottom: 10px;
   box-sizing: border-box;
-}
-
-.tile {
-  margin: 0;
-  font-size: 14px;
-  margin-bottom: 4px;
-}
-
-.tile.tile-title {
-  font-weight: bold;
-}
-
-.tile-container {
-  margin-bottom: 20px;
 }

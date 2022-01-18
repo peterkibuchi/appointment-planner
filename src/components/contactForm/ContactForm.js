@@ -47,7 +47,7 @@ export const ContactForm = ({
       <input
         type="tel" name="phoneNumber" id="phoneNumber"
         pattern="^(\(?\+?[0-9]*\)?)?[0-9_\- \(\)]*$"
-        placeholder="XXX-XXX-XXXX"
+        placeholder="e.g +254-712-345678"
         value={phoneNumber} onChange={handlePhoneNumberChange}
         required
       />
