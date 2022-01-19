@@ -81,8 +81,8 @@ function App() {
   }
 
   const ROUTES = {
-    CONTACTS: "/appointment-planner/contacts",
-    APPOINTMENTS: "/appointment-planner/appointments",
+    CONTACTS: "/contacts",
+    APPOINTMENTS: "/appointments",
   };
 
   return (
