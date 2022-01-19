@@ -1,6 +1,6 @@
 # Appointment Planner
 > A simple Appointment Planner Application built off React.
-> Live demo [_here_](https://muchemanio.netlify.app/).
+> Live demo [_here_](https://peterkibuchi.github.io/appointment-planner/).
 
 ## Table of Contents
 * [General Info](#general-information)
