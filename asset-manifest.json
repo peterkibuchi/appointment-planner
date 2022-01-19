@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/appointment-planner/static/css/main.7c5e5218.chunk.css",
-    "main.js": "/appointment-planner/static/js/main.d3ec6604.chunk.js",
-    "main.js.map": "/appointment-planner/static/js/main.d3ec6604.chunk.js.map",
+    "main.js": "/appointment-planner/static/js/main.be3388fb.chunk.js",
+    "main.js.map": "/appointment-planner/static/js/main.be3388fb.chunk.js.map",
     "runtime-main.js": "/appointment-planner/static/js/runtime-main.ff3eadb4.js",
     "runtime-main.js.map": "/appointment-planner/static/js/runtime-main.ff3eadb4.js.map",
     "static/js/2.f8256d85.chunk.js": "/appointment-planner/static/js/2.f8256d85.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.ff3eadb4.js",
     "static/js/2.f8256d85.chunk.js",
     "static/css/main.7c5e5218.chunk.css",
-    "static/js/main.d3ec6604.chunk.js"
+    "static/js/main.be3388fb.chunk.js"
   ]
 }
