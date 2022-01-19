@@ -1,5 +1,5 @@
 # Appointment Planner
-> A simple Appointment Planner Application built off React.
+> An Appointment Planner Application built off React.
 > Live demo [_here_](https://peterkibuchi.github.io/appointment-planner/).
 
 ## Table of Contents
@@ -14,7 +14,8 @@
 
 
 ## General Information
-- This application enables users to add contacts, and schedule appointments, and save them to local storage.
+- This application enables users to add contacts, schedule appointments, and save them to local storage.
+- I undertook this project as a hands-on means of furthering my understanding of functional components and React hooks, as well as React itself.
 
 
 ## Technologies Used
