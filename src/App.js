@@ -13,9 +13,9 @@ function App() {
   ];
 
   const mockAppointments = [
-    {title: "'Thopter Training", contact: "Duncan Idaho", date: "10190-07-21", time: "14:00"}
-    {title: "Sword Training", contact: "Duncan Idaho", date: "10194-05-01", time: "08:00"}
-    {title: "Ride a Sandworm", contact: "Stilgar", date: "10198-08-13", time: "06:00"}
+    {title: "'Thopter Training", contact: "Duncan Idaho", date: "10190-07-21", time: "14:00"},
+    {title: "Sword Training", contact: "Duncan Idaho", date: "10194-05-01", time: "08:00"},
+    {title: "Ride a Sandworm", contact: "Stilgar", date: "10198-08-13", time: "06:00"},
     {title: "Bene Gesserit Training", contact: "Jessica Atreides", date: "10220-04-20", time: "10:00"}
   ];
 
