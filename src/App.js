@@ -5,9 +5,23 @@ import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage
 import { ContactsPage } from "./containers/contactsPage/ContactsPage";
 
 function App() {
+  const mockContacts = [
+    {name: "Jessica Atreides", occupation: "Bene Gesserit", phoneNumber: "+44-701-020304", email: "jessica@caladan.com"},
+    {name: "Duncan Idaho", occupation: "Sword Master", phoneNumber: "+1 790 639723", email: "duncan@atreides.com"},
+    {name: "Dr. Yueh", occupation: "Suk Doctor", phoneNumber: "0769 420420", email: "yueh@wanna.com"},
+    {name: "Stilgar", occupation: "Naib of Sietch Tabr", phoneNumber: "+10 720 121999", email: "stil@tabr.com"}
+  ];
+
+  const mockAppointments = [
+    {title: "'Thopter Training", contact: "Duncan Idaho", date: "10190-07-21", time: "14:00"}
+    {title: "Sword Training", contact: "Duncan Idaho", date: "10194-05-01", time: "08:00"}
+    {title: "Ride a Sandworm", contact: "Stilgar", date: "10198-08-13", time: "06:00"}
+    {title: "Bene Gesserit Training", contact: "Jessica Atreides", date: "10220-04-20", time: "10:00"}
+  ];
+
   /* Define state variables for contacts and appointments */
-  const [contacts, setContacts] = useState([]);
-  const [appointments, setAppointments] = useState([]);
+  const [contacts, setContacts] = useState(mockContacts);
+  const [appointments, setAppointments] = useState(mockAppointments);
 
   // Runs ONCE when the app first renders
   useEffect(() => {
