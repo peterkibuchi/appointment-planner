@@ -91,7 +91,7 @@ function App() {
   }
 
   const removeAppointment = (index) => {
-    setAppointments(appointments.filter((appointments, i) => i !== index));
+    setAppointments(appointments.filter((appointment, i) => i !== index));
   }
 
   const ROUTES = {

@@ -5,11 +5,11 @@ import { Table } from "../../components/table/Table";
 
 export const ContactsPage = ({ contacts, addContact, removeContact }) => {
   /* Define state variables for contact info and duplicate check */
-  let [name, setName] = useState("");
-  let [occupation, setOccupation] = useState("");
-  let [phoneNumber, setPhoneNumber] = useState("");
-  let [email, setEmail] = useState("");
-  let [duplicate, setDuplicate] = useState(false);
+  const [name, setName] = useState("");
+  const [occupation, setOccupation] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [duplicate, setDuplicate] = useState(false);
 
   /* Using hooks, check for contact name in the contacts array variable in props */
   useEffect(() => {
@@ -20,7 +20,7 @@ export const ContactsPage = ({ contacts, addContact, removeContact }) => {
         setDuplicate(true);
       }
     });
-  }, [name, occupation]);
+  }, [name, occupation, contacts]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
