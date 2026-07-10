@@ -20,6 +20,9 @@
 
 ## Technologies Used
 - React
+- React Router
+- Vite
+- pnpm
 
 
 ## Features
