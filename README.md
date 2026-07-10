@@ -5,6 +5,7 @@
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
+* [Setup](#setup)
 * [Features](#features)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
@@ -23,6 +24,16 @@
 - React Router
 - Vite
 - pnpm
+
+
+## Setup
+```bash
+pnpm install      # install dependencies
+pnpm dev          # start the Vite dev server
+pnpm build        # build for production into dist/
+pnpm preview      # preview the production build locally
+pnpm deploy       # publish dist/ to GitHub Pages (gh-pages branch)
+```
 
 
 ## Features
