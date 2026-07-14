@@ -1,0 +1,10 @@
+# Audit findings (2026-07-11)
+
+Open items from the July 2026 dependency-update and audit run. Fixed items live in git history.
+
+- MEDIUM — src/App.jsx — unguarded `JSON.parse(localStorage.getItem(...))` white-screens the app on corrupted stored values, AND the storage keys `"contacts"` / `"appointments"` are generic while the app is served from the shared `peterkibuchi.github.io` origin, so data collides with any other GitHub Pages project using the same keys — namespace the keys (e.g. `appointment-planner:contacts`) and wrap the parses in try/catch. Note the key rename changes stored-data behavior for existing visitors (their old data would appear lost).
+- LOW — src/components/table/TableBody.jsx — rows render `Object.values(item)`, so column order depends on object key insertion order rather than an explicit column list; rows and cells also use array index as React key — render explicit fields and use stable keys.
+- LOW — src/App.jsx — on first visit, the mock contacts/appointments seeded as initial state get persisted into localStorage as real data (demo behavior) — either intentionalize it (clearly-labeled demo data) or gate the seed behind an explicit action.
+- LOW — src/containers/contactsPage/ContactsPage.jsx — duplicate-contact rejection only `console.log`s; there is no user-visible feedback when a submission is silently dropped — surface an inline error message.
+- INFO — deployment — the live GitHub Pages site still serves the old CRA build until `pnpm build && pnpm run deploy` is run; the `homepage` field in package.json is a CRA leftover kept as URL documentation (harmless under Vite); the `import React` lines are unnecessary under the automatic JSX runtime (also harmless).
+- INFO — .github/workflows — the CI build job is kept deliberately: this app deploys to GitHub Pages (not Vercel), so the CI build is the only verification (the usual "build already verifies on Vercel" rationale does not apply here). No pnpm-workspace.yaml exists, so the minimumReleaseAge check is N/A.
